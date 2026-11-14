@@ -29,7 +29,7 @@ Use temporary databases and fake payment tokens for unit tests. No real payment 
 
 # Defects fixed
 
-Each fix is explained in a comment beside the change. Tests are in `tests/test_fixes.py`.
+**Each fix is explained in a comment beside the change**. Tests are in `tests/test_fixes.py`.
 
 | # | File | Defect | Fix | Test |
 |---|------|--------|-----|------|
@@ -57,3 +57,5 @@ Each fix is explained in a comment beside the change. Tests are in `tests/test_f
 4. failed payments still save an order row as an audit trail
 5. a total discounted to $0 still goes through the simulated gateway 
 6. two checkouts with the same request_id running at exactly the same moment could both get past the lookup but UNIQUE stops the second order row from being saved but not the second charge 
+
+![alt text](image.png)
